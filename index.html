@@ -2,19 +2,15 @@
 <html>
     <head>
         <title>吴俊伟的个人简历</title>
-        <link rel="stylesheet" href="./a.css">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./loading.css">
         <script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
-        <style type="text/css">
-          .icon {
-             width: 1em; height: 1em;
-             vertical-align: -0.15em;
-             fill: currentColor;
-             overflow: hidden;
-          }
-      </style>
     </head>
     </head>
         <body>
+          <div id="siteWelcome" class="site-welcome active">
+              <div class="loading"></div>
+            </div>
           <div class="topNavBar">
             <div class="topNavBar-inner clearfix">
                 <a class="Logo" href="#" alt="Logo" style="float:left;">
@@ -177,4 +173,9 @@
 
           </section>
         </body>
+        <script>
+          setTimeout(function(){
+            siteWelcome.classList.remove('active')
+          },1500)
+        </script>
 </html>
