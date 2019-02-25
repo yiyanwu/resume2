@@ -1,220 +1,260 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>吴俊伟的个人简历</title>
-        <link rel="stylesheet" href="./main.css">
-        <link rel="stylesheet" href="./loading.css">
-        <script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
-    </head>
-    </head>
-        <body>
-          <div id="siteWelcome" class="site-welcome active">
-              <div class="loading"></div>
-            </div>
-          <div id="topNavBar" class="topNavBar">
-            <div class="topNavBar-inner clearfix">
-                <a class="Logo" href="#" alt="Logo" style="float:left;">
-                    <span class="rs">RS</span><span class="card">card</span>
-                </a>
-                <nav class="menu" style="float:right;">
-                    <ul class="clearfix">
-                        <li><a href="#siteAbout">关于</a></li>
-                        <li><a href="#siteSkills">技能</a></li>
-                        <li><a href="#siteWorks">作品</a>
-                        <ul class="Submenu">
-                          <li>作品1</li>
-                          <li>作品2</li>
-                          <li>作品3</li>
-                        </ul>
-                        </li>
-                        <li><a href="#">博客</a>
-                          <ul class="Submenu">
-                            <li>博客1</li>
-                            <li>博客2</li>
-                            <li>博客3</li>
-                          </ul>
-                        </li>
-                        <li><a href="#">日历</a></li>
-                        <li><a href="#">联系方式</a></li>
-                        <li><a href="#">其他</a></li>
-                    </ul>
-                </nav>
-            </div>
-          </div>  
-          <div class="banner">
-            <div class="mask"></div>
-          </div>
-    <main>
-      <div id="siteAbout" class="userCard">
-        <div class="pictureAndText clearfix">
-          <div class="picture" style="float:left;">
-            <img src="./img/avatar.jpg" width="299" height="347" alt="头像">
-          </div>
-          <div class="text" style="float:left;">
-              <span class="welcome">Hello
-                <span class="triangle"></span>
-              </span>
-              <h1>吴俊伟</h1>
-              <p>前端开发工程师</p>
-              <hr>
-              <dl>
-                <dt>年龄</dt>
-                <dd>29</dd>
-                <dt>所在城市</dt>
-                <dd>丽水</dd>
-                <dt>邮箱</dt>
-                <dd>308111394@qq.com</dd>
-                <dt>手机</dt>
-                <dd>15957804517</dd>
-              </dl>
-          </div>
-        </div>
-        <footer class="media">
-          <a href="#"><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-jianshu"></use>
-          </svg></a>
-          <a href="#"><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-ttww"></use>
-          </svg></a>
-          <a href="#"><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-jirengulogozaoqi"></use>
-          </svg></a>
-          <a href="#"><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-github1"></use>
-          </svg></a>
-          <a href="#"><svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-weibo"></use>
-          </svg></a>
-        </footer>
-      </div>
-      <p class="downloadResume-wrapper">
-        <a class="downloadResume" href="#">下载 PDF 简历</a>
-      </p>
-      <p class="selfIntroduction">
-        吴俊伟，网页前端开发初学者<br>
-        技能：前端开发，Rails 开发，Node.js 开发
-      </p>
-    </main>
-    <section id="siteSkills" class="skills">
-      <h2>技能</h2>
-      <ol class="clearfix">
-        <li>
-          <h3>
-              HTML 5 &amp; CSS 3
-          </h3>
-          <div class="progressBar">
-            <div class="progress" style="width: 20%;"></div>
-          </div>
-        </li>
-        <li>
-          <h3>
-              JavaScript
-          </h3>
-            <div class="progressBar">
-              <div class="progress" style="width: 10%;"></div>
-            </div>
-        </li>
-        <li>
-            <h3>
-                jQuery
-            </h3>
-              <div class="progressBar">
-                <div class="progress" style="width: 5%;"></div>
-              </div>
-        </li>
-        <li>
-            <h3>
-                Vue.js
-            </h3>
-                <div class="progressBar">
-                  <div class="progress" style="width: 5%;"></div>
-                </div>
-        </li>
-        <li>
-            <h3>
-                React.js
-            </h3>
-                  <div class="progressBar">
-                    <div class="progress" style="width: 5%;"></div>
-                  </div>
-          </li>
-          <li>
-            <h3>
-                Node.js
-            </h3>
-                    <div class="progressBar">
-                      <div class="progress" style="width: 20%;"></div>
-               </div>
-          </li>
-      </ol>
-    </section>
-    <section id="siteWorks" class="portfolio">
-      <h2>作品集</h2>
-      <nav>
-        <ol class="clearfix">
-          <li id="portfolio1">所有</li>
-          <li id="portfolio2">框架</li>
-          <li id="portfolio3">原生JS&amp;CSS</li>
-        </ol>
-        <div id="portfolioBar" class="bar state-1">
-          <div class="bar-inner"></div>
-        </div>
-      </nav>
-      <script>
-        portfolio1.onclick= function(){
-          portfolioBar.className = 'bar state-1'
-        }
-        portfolio2.onclick= function(){
-          portfolioBar.className = 'bar state-2'
-        }
-        portfolio3.onclick= function(){
-          portfolioBar.className = 'bar state-3'
-        }
-      </script>
-      <div class="works" style="height: 578px;">
-        <div class="big" style="top: 0; left: 0;">
-          <img src="./img/1.jpg" alt="作品1">
-        </div>
-        <div class="small" style="top: 0; left: 645px;">
-            <img src="./img/2.jpg" alt="作品2">
-        </div>
-        <div class="small" style="top: 298px; left: 645px;">
-            <img src="./img/3.jpg" alt="作品3">
-        </div>
-      </div>
 
-          </section>
-        </body>
-        <script>
-          setTimeout(function(){
-            siteWelcome.classList.remove('active')
-          },1000)
-          window.onscroll = function(){
-            if(window.scrollY > 0){
-              topNavBar.classList.add('sticky')
-              }else{
-                topNavBar.classList.remove('sticky')
-              }
-          }
-          let liTags = document.querySelectorAll('nav.menu >ul >li')
-          for(let i=0;i<liTags.length;i++){
-            liTags[i].onmouseenter = function(x){
-              x.currentTarget.classList.add('active')
-            }
-            liTags[i].onmouseleave = function(x){
-              x.currentTarget.classList.remove('active')
-            }
-          }
-          let aTags = document.querySelectorAll('nav.menu >ul >li >a')
-          for(let i=0;i<aTags.length;i++){
-            aTags[i].onclick = function(x){
-              x.preventDefault()
-              let a = x.currentTarget
-              let href = a.getAttribute('href')
-              let element = document.querySelector(href)
-              let top = element.offsetTop
-              window.scrollTo(0, top-70)
-            }
-          }
-        </script>
+<head>
+  <title>吴俊伟的个人简历</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./loading.css">
+  <script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
+</head>
+</head>
+
+<body>
+  <div id="siteWelcome" class="site-welcome active">
+    <div class="loading"></div>
+  </div>
+  <div id="topNavBar" class="topNavBar">
+    <div class="topNavBar-inner clearfix">
+      <a class="Logo" href="#" alt="Logo" style="float:left;">
+        <span class="rs">RS</span><span class="card">card</span>
+      </a>
+      <nav class="menu" style="float:right;">
+        <ul class="clearfix">
+          <li><a href="#siteAbout">关于</a></li>
+          <li><a href="#siteSkills">技能</a></li>
+          <li><a href="#siteWorks">作品</a>
+            <ul class="Submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
+            </ul>
+          </li>
+          <li><a href="#">博客</a>
+            <ul class="Submenu">
+              <li>博客1</li>
+              <li>博客2</li>
+              <li>博客3</li>
+            </ul>
+          </li>
+          <li><a href="#">日历</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="mask"></div>
+  </div>
+  <main>
+    <div data-x id="siteAbout" class="userCard">
+      <div class="pictureAndText clearfix">
+        <div class="picture" style="float:left;">
+          <img src="./img/avatar.jpg" width="299" height="347" alt="头像">
+        </div>
+        <div class="text" style="float:left;">
+          <span class="welcome">Hello
+            <span class="triangle"></span>
+          </span>
+          <h1>吴俊伟</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl>
+            <dt>年龄</dt>
+            <dd>29</dd>
+            <dt>所在城市</dt>
+            <dd>丽水</dd>
+            <dt>邮箱</dt>
+            <dd>308111394@qq.com</dd>
+            <dt>手机</dt>
+            <dd>15957804517</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jianshu"></use>
+          </svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-ttww"></use>
+          </svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-jirengulogozaoqi"></use>
+          </svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github1"></use>
+          </svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weibo"></use>
+          </svg></a>
+      </footer>
+    </div>
+    <p class="downloadResume-wrapper">
+      <a class="downloadResume" href="#">下载 PDF 简历</a>
+    </p>
+    <p class="selfIntroduction">
+      吴俊伟，网页前端开发初学者<br>
+      技能：前端开发，Rails 开发，Node.js 开发
+    </p>
+  </main>
+  <section data-x id="siteSkills" class="skills">
+    <h2>技能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>
+          HTML 5 &amp; CSS 3
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 20%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          JavaScript
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 10%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          jQuery
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 5%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Vue.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 5%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          React.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 5%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>
+          Node.js
+        </h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 20%;"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section data-x id="siteWorks" class="portfolio">
+    <h2>作品集</h2>
+    <nav>
+      <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架</li>
+        <li id="portfolio3">原生JS&amp;CSS</li>
+      </ol>
+      <div id="portfolioBar" class="bar state-1">
+        <div class="bar-inner"></div>
+      </div>
+    </nav>
+    <script>
+      portfolio1.onclick = function () {
+        portfolioBar.className = 'bar state-1'
+      }
+      portfolio2.onclick = function () {
+        portfolioBar.className = 'bar state-2'
+      }
+      portfolio3.onclick = function () {
+        portfolioBar.className = 'bar state-3'
+      }
+    </script>
+    <div class="works" style="height: 578px;">
+      <div class="big" style="top: 0; left: 0;">
+        <img src="./img/1.jpg" alt="作品1">
+      </div>
+      <div class="small" style="top: 0; left: 645px;">
+        <img src="./img/2.jpg" alt="作品2">
+      </div>
+      <div class="small" style="top: 298px; left: 645px;">
+        <img src="./img/3.jpg" alt="作品3">
+      </div>
+    </div>
+
+  </section>
+</body>
+<script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
+<script>
+  setTimeout(function () {
+    siteWelcome.classList.remove('active')
+  }, 1000)
+  window.onscroll = function () {
+    if (window.scrollY > 0) {
+      topNavBar.classList.add('sticky')
+    } else {
+      topNavBar.classList.remove('sticky')
+    }
+    let markTags = document.querySelectorAll('[data-x]')
+    let minIndex = 0
+    for (let i = 1; i < markTags.length; i++) {
+      if (Math.abs(markTags[i].offsetTop - window.scrollY) < Math.abs(markTags[minIndex].offsetTop - window.scrollY)) {
+        minIndex = i
+      }
+    }
+    for (let i = 0;i <markTags.length; i++){
+      markTags[i].classList.remove('moved')
+    }
+    markTags[minIndex].classList.add('moved')
+    let id = markTags[minIndex].id
+    let a = document.querySelector('a[href="#' + id + '"]')
+    let li = a.parentNode
+    let childrens = li.parentNode.children
+    for (let i=0;i<childrens.length;i++){
+      childrens[i].classList.remove('moved')
+    }
+    li.classList.add('moved')
+  }
+  let liTags = document.querySelectorAll('nav.menu >ul >li')
+  for (let i = 0; i < liTags.length; i++) {
+    liTags[i].onmouseenter = function (x) {
+      x.currentTarget.classList.add('active')
+    }
+    liTags[i].onmouseleave = function (x) {
+      x.currentTarget.classList.remove('active')
+    }
+  }
+
+  let aTags = document.querySelectorAll('nav.menu >ul >li >a')
+  function animate(time) {
+    requestAnimationFrame(animate);
+    TWEEN.update(time);
+  }
+  requestAnimationFrame(animate);
+
+  for (let i = 0; i < aTags.length; i++) {
+    aTags[i].onclick = function (x) {
+      x.preventDefault()
+      let a = x.currentTarget
+      let href = a.getAttribute('href')
+      let element = document.querySelector(href)
+      let top = element.offsetTop
+
+      let currentTop = window.scrollY
+      let targretTop = top - 70
+      var coords = { y: currentTop };
+      var tween = new TWEEN.Tween(coords)
+        .to({ y: targretTop }, 1000)
+        .easing(TWEEN.Easing.Quadratic.InOut)
+        .onUpdate(function () {
+          window.scrollTo(0, coords.y)
+        })
+        .start();
+    }
+  }
+</script>
+
 </html>
