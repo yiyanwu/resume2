@@ -10,9 +10,6 @@
 </head>
 
 <body>
-  <div id="siteWelcome" class="site-welcome active">
-    <div class="loading"></div>
-  </div>
   <div id="topNavBar" class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="Logo" href="#" alt="Logo" style="float:left;">
@@ -189,15 +186,22 @@
 </body>
 <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
 <script>
-  setTimeout(function () {
-    siteWelcome.classList.remove('active')
-  }, 1000)
+  let markTags = document.querySelectorAll('[data-x]')
+  for (let i = 0;i <markTags.length; i++){
+    markTags[i].classList.add('riseup')
+  }
+  setTimeout(function(){
+    scrollto()
+  },100)
   window.onscroll = function () {
     if (window.scrollY > 0) {
       topNavBar.classList.add('sticky')
     } else {
       topNavBar.classList.remove('sticky')
     }
+    scrollto()
+  }
+  function scrollto(){
     let markTags = document.querySelectorAll('[data-x]')
     let minIndex = 0
     for (let i = 1; i < markTags.length; i++) {
@@ -208,6 +212,7 @@
     for (let i = 0;i <markTags.length; i++){
       markTags[i].classList.remove('moved')
     }
+    markTags[minIndex].classList.remove('riseup')
     markTags[minIndex].classList.add('moved')
     let id = markTags[minIndex].id
     let a = document.querySelector('a[href="#' + id + '"]')
