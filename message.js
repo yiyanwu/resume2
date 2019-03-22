@@ -17,24 +17,24 @@
             var APP_KEY = 'PPxUz7BbNiKKlhgh41udYFrb';
             AV.init({appId: APP_ID,appKey: APP_KEY});
         },
-        loadMessage:function(){
+        loadMessage: function(){
             var query = new AV.Query('Message');
             query.find().then((messages) => {
                 let array = messages.map((item)=>item.attributes)
                 array.forEach((item)=>{
                     let li = document.createElement('li')
-                    li.innerText = `${item.name}:${item.content}` 
+                    li.innerText = `${item.name}: ${item.content}` 
                     this.messageList.appendChild(li)
                 })
             })
         },
-        bindEvents:function(){
+        bindEvents: function(){
             this.form.addEventListener('submit', function (e) {
                 e.preventDefault()
                 this.saveMessage()
             })
         },
-        saveMessage:function(){
+        saveMessage: function(){
             let myForm = this.form
             let content = myForm.querySelector('input[name=content]').value
             let name = myForm.querySelector('input[name=name]').value
@@ -45,13 +45,13 @@
                 'content': content
             }).then(function (object) {
                 let li = document.createElement('li')
-                li.innerText = `${object.attributes.name}:${object.attributes.content}` 
+                li.innerText = `${object.attributes.name}: ${object.attributes.content}` 
                 messageList.appendChild(li)
                 myForm.querySelector('input[name=content]').value = ''
             })
         }
     }   
     controller.init(view)
-},call()
+}.call()
 
 
