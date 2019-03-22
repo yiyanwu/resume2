@@ -5,7 +5,6 @@
   <title>吴俊伟的个人简历</title>
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./loading.css">
-  <script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
 </head>
 </head>
 
@@ -183,8 +182,22 @@
     </div>
 
   </section>
+  <section class="Message">
+    <h2>留言</h2>
+    <ol id="messageList"></ol>
+    <form id="postMessageForm" style="width: 940px; margin:40px auto;">
+      <label for="">姓名</label>
+      <input type="name" name="name">
+      <label for="">留言内容</label>
+      <input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
+  </section>
 </body>
 <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
+<script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
+<script src="./message.js"></script>
 <script>
   let markTags = document.querySelectorAll('[data-x]')
   for (let i = 0;i <markTags.length; i++){

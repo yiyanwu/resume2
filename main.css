@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6{
     clear: both;
   }
 [data-x].moved{
-  outline: 2px solid red;
+border:1px solid bisque;
 }
 [data-x].riseup{
   transform: translateY(100px);
@@ -260,6 +260,7 @@ section.portfolio{
     margin-top: 60px;
   }
 section.skills >h2,
+section.Message >h2,
 section.portfolio >h2{
     text-align: center;
     color: #3d4451;
@@ -358,4 +359,13 @@ section.portfolio .works{
 section.portfolio .works > .big,
 section.portfolio .works > .small{
   position: absolute;
+}
+section.Message >ol{
+  max-width:940px;
+  margin: 40px  auto;
+  border-bottom: 1px solid #fae1e1;
+}
+section.Message >ol >li{
+ padding: 16px;
+ border-top: 1px solid #fae1e1;
 }
