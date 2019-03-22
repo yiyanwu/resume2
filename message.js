@@ -9,8 +9,7 @@
             this.form = view.querySelector('form')
             this.initAV()
             this.loadMessage()
-            this.bindEvents()
-            this.saveMessage()
+            this.bindEvents()     
         },
         initAV: function(){
             var APP_ID = 'ABDAOVwEp0C3ObRC6sW978mt-gzGzoHsz';
