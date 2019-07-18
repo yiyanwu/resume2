@@ -3,8 +3,8 @@
 
 <head>
   <title>吴俊伟的个人简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="./main.css">
-  <link rel="stylesheet" href="./loading.css">
 </head>
 </head>
 
@@ -18,23 +18,7 @@
         <ul class="clearfix">
           <li><a href="#siteAbout">关于</a></li>
           <li><a href="#siteSkills">技能</a></li>
-          <li><a href="#siteWorks">作品</a>
-            <ul class="Submenu">
-              <li>作品1</li>
-              <li>作品2</li>
-              <li>作品3</li>
-            </ul>
-          </li>
-          <li><a href="#">博客</a>
-            <ul class="Submenu">
-              <li>博客1</li>
-              <li>博客2</li>
-              <li>博客3</li>
-            </ul>
-          </li>
-          <li><a href="#">日历</a></li>
-          <li><a href="#">联系方式</a></li>
-          <li><a href="#">其他</a></li>
+          <li><a href="#siteWorks">作品</a></li>
         </ul>
       </nav>
     </div>
@@ -68,20 +52,11 @@
         </div>
       </div>
       <footer class="media">
-        <a href="#"><svg class="icon" aria-hidden="true">
+        <a href="https://www.jianshu.com/u/bc88e0117a2b" target="_blank"><svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-jianshu"></use>
           </svg></a>
-        <a href="#"><svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-ttww"></use>
-          </svg></a>
-        <a href="#"><svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-jirengulogozaoqi"></use>
-          </svg></a>
-        <a href="#"><svg class="icon" aria-hidden="true">
+        <a href="https://github.com/yiyanwu" target="_blank"><svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-github1"></use>
-          </svg></a>
-        <a href="#"><svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-weibo"></use>
           </svg></a>
       </footer>
     </div>
@@ -90,7 +65,7 @@
     </p>
     <p class="selfIntroduction">
       吴俊伟，网页前端开发初学者<br>
-      技能：前端开发，Rails 开发，Node.js 开发
+      毕业于电子科技大学应用化学专业，自学前端半年
     </p>
   </main>
   <section data-x id="siteSkills" class="skills">
@@ -101,7 +76,7 @@
           HTML 5 &amp; CSS 3
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 20%;"></div>
+          <div class="progress" style="width: 80%;"></div>
         </div>
       </li>
       <li>
@@ -109,7 +84,7 @@
           JavaScript
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 10%;"></div>
+          <div class="progress" style="width: 80%;"></div>
         </div>
       </li>
       <li>
@@ -117,7 +92,7 @@
           jQuery
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 5%;"></div>
+          <div class="progress" style="width: 40%;"></div>
         </div>
       </li>
       <li>
@@ -125,7 +100,7 @@
           Vue.js
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 5%;"></div>
+          <div class="progress" style="width: 70%;"></div>
         </div>
       </li>
       <li>
@@ -133,7 +108,7 @@
           React.js
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 5%;"></div>
+          <div class="progress" style="width: 70%;"></div>
         </div>
       </li>
       <li>
@@ -141,46 +116,25 @@
           Node.js
         </h3>
         <div class="progressBar">
-          <div class="progress" style="width: 20%;"></div>
+          <div class="progress" style="width: 50%;"></div>
         </div>
       </li>
     </ol>
   </section>
   <section data-x id="siteWorks" class="portfolio">
     <h2>作品集</h2>
-    <nav>
-      <ol class="clearfix">
-        <li id="portfolio1">所有</li>
-        <li id="portfolio2">框架</li>
-        <li id="portfolio3">原生JS&amp;CSS</li>
-      </ol>
-      <div id="portfolioBar" class="bar state-1">
-        <div class="bar-inner"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <img src="./img/works/ui.jpg" class="swiper-slide">
+        <img src="./img/works/canvas.jpg" class="swiper-slide">
+        <img src="./img/works/nav.jpg" class="swiper-slide">
+        <img src="./img/works/translation.jpg" class="swiper-slide">
+        <img src="./img/works/batman.jpg" class="swiper-slide">
       </div>
-    </nav>
-    <script>
-      portfolio1.onclick = function () {
-        portfolioBar.className = 'bar state-1'
-      }
-      portfolio2.onclick = function () {
-        portfolioBar.className = 'bar state-2'
-      }
-      portfolio3.onclick = function () {
-        portfolioBar.className = 'bar state-3'
-      }
-    </script>
-    <div class="works" style="height: 578px;">
-      <div class="big" style="top: 0; left: 0;">
-        <img src="./img/1.jpg" alt="作品1">
-      </div>
-      <div class="small" style="top: 0; left: 645px;">
-        <img src="./img/2.jpg" alt="作品2">
-      </div>
-      <div class="small" style="top: 298px; left: 645px;">
-        <img src="./img/3.jpg" alt="作品3">
-      </div>
+      <div class="swiper-pagination"></div>
     </div>
-
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </section>
   <section class="Message">
     <h2>留言</h2>
@@ -194,18 +148,31 @@
     </form>
   </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="https://cdn.bootcss.com/tween.js/r14/Tween.js"></script>
 <script src="//at.alicdn.com/t/font_1039233_02tr07y500l6.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
 <script src="./message.js"></script>
 <script>
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+</script>
+<script>
   let markTags = document.querySelectorAll('[data-x]')
-  for (let i = 0;i <markTags.length; i++){
+  for (let i = 0; i < markTags.length; i++) {
     markTags[i].classList.add('riseup')
   }
-  setTimeout(function(){
+  setTimeout(function () {
     scrollto()
-  },100)
+  }, 100)
   window.onscroll = function () {
     if (window.scrollY > 0) {
       topNavBar.classList.add('sticky')
@@ -214,7 +181,7 @@
     }
     scrollto()
   }
-  function scrollto(){
+  function scrollto() {
     let markTags = document.querySelectorAll('[data-x]')
     let minIndex = 0
     for (let i = 1; i < markTags.length; i++) {
@@ -222,7 +189,7 @@
         minIndex = i
       }
     }
-    for (let i = 0;i <markTags.length; i++){
+    for (let i = 0; i < markTags.length; i++) {
       markTags[i].classList.remove('moved')
     }
     markTags[minIndex].classList.remove('riseup')
@@ -231,7 +198,7 @@
     let a = document.querySelector('a[href="#' + id + '"]')
     let li = a.parentNode
     let childrens = li.parentNode.children
-    for (let i=0;i<childrens.length;i++){
+    for (let i = 0; i < childrens.length; i++) {
       childrens[i].classList.remove('moved')
     }
     li.classList.add('moved')
