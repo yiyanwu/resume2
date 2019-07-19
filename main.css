@@ -41,12 +41,8 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-/* [data-x].moved{
-border:1px solid bisque;
-} */
-
 [data-x].riseup {
-  transform: translateY(100px);
+  transform: translateY(20px);
 }
 
 [data-x] {
@@ -115,7 +111,7 @@ border:1px solid bisque;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #e06567;
+  background: #4cbcf0;
   animation: MenuSlide 0.3s;
 }
 
@@ -166,7 +162,7 @@ border:1px solid bisque;
 }
 
 .topNavBar .Logo .rs {
-  color: #e6686a;
+  color: #4cbcf0;
   margin-right: 4px;
 }
 
@@ -195,7 +191,7 @@ border:1px solid bisque;
 }
 
 .userCard .welcome {
-  background: #e6686a;
+  background: #4cbcf0;
   color: white;
   display: inline-block;
   padding: 5px 16px 4px 16px;
@@ -207,7 +203,7 @@ border:1px solid bisque;
   display: block;
   border: 10px solid transparent;
   width: 0px;
-  border-left-color: #e6686a;
+  border-left-color: #4cbcf0;
   border-top-width: 0px;
   position: absolute;
   top: 100%;
@@ -247,8 +243,10 @@ border:1px solid bisque;
 }
 
 .userCard>footer.media {
-  background: #e6686a;
+  background: #4cbcf0;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .userCard>footer.media>a {
@@ -347,7 +345,7 @@ section.skills>ol>li:nth-child(even) {
 
 section.skills .progressBar {
   height: 5px;
-  background: #fae1e1;
+  background: #E0F2F7;
   border-radius: 2px;
   margin: 4px 0 40px;
   overflow: hidden;
@@ -355,7 +353,7 @@ section.skills .progressBar {
 
 section.skills .progressBar>.progress {
   height: 100%;
-  background: #e6686a;
+  background: #4cbcf0;
   width: 70%;
   border-radius: 2px;
   transform: translateX(-100%);
@@ -382,13 +380,29 @@ section.portfolio>.swiper-container {
   margin-top: 30px;
 }
 
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons>a {
+  display: inline-block;
+  border: 1px solid #4cbcf0;
+  color: #4cbcf0;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
 section.Message>ol {
   max-width: 940px;
   margin: 40px auto;
-  border-bottom: 1px solid #fae1e1;
+  border-bottom: 1px solid #4cbcf0;
 }
 
 section.Message>ol>li {
   padding: 16px;
-  border-top: 1px solid #fae1e1;
+  border-top: 1px solid #4cbcf0;
 }
