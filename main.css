@@ -396,6 +396,10 @@ section.portfolio>.swiper-container {
   font-size: 13px;
 }
 
+section.Message {
+  margin-bottom: 200px;
+}
+
 section.Message>ol {
   max-width: 940px;
   margin: 40px auto;
